@@ -10,10 +10,11 @@ const reviewsRouter = require("./reviews/reviews.router");
 app.use(cors());
 app.use(express.json());
 //each route and then looks at router for further directions
+
 app.use("/movies", moviesRouter);
 app.use("/theaters", theatersRouter);
 app.use("/reviews", reviewsRouter);
-
+//app.use("/", (req, res, next) => res.send("WeLoveMovies"));
 // Not found handler
 app.use((req, res, next) => {
   next({ status: 404, message: `Not found: ${req.originalUrl}` });
