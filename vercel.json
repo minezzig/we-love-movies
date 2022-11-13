@@ -1,10 +1,17 @@
-{
+  {
     "version": 2,
-    "name": "name-of-your-vercel-app",
     "builds": [
-      { "src": "script.js", "use": "@vercel/node" }
+      {
+        "src": "app.js",
+        "use": "@now/node"
+      }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/index.js" }
+      {
+        // Specify which paths will route to a destination using a regex
+        "src": "/(.*)",
+        // Specify the paths' destination
+        "dest": "index.js"
+      }
     ]
   }
