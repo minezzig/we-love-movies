@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "name-of-your-vercel-app",
+  "name": "We Love Movies",
   "builds": [
-    { "src": "src/app.js", "use": "@vercel/node" }
+    { "src": "src/server.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "src/app.js" }
