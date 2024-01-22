@@ -1,14 +1,3 @@
 {
-  "version": 2,
-  "name": "We Love Movies",
-  "builds": [
-    { "src": "src/app.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "src/app.js" }
-  ]
-}
-
-{
   "rewrites": [{ "source": "src/app.js", "destination": "src/app.js" }]
 }
