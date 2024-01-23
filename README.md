@@ -1,6 +1,6 @@
 # Thinkful Capstone: WeLoveMovies
 
-Backend Deployed at: https://loving-movies.herokuapp.com/ 
+Backend Deployed at: https://we-love-movies-eta.vercel.app
 
 Frontend Deployed at 
 
